@@ -1,5 +1,4 @@
 <script>
 alert(111);
-alert(document.cookie);
-alert(222);
+function callBack(p1){alert(p1);};mihomeJsBridge.postMessage('{"action":"getUserInfo","response":"window.callBack"}');
 </script>
