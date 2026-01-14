@@ -1,37 +1,6 @@
 <!-- <script>
 function callBack(p1){alert(p1);};mihomeJsBridge.postMessage('{"action":"getUserInfo","response":"window.callBack"}');
 </script> -->
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <title>获取客户端信息页面</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-//window.location.href = "mimarket://details?appClientId=com.xiaomi.market.sdk.test&detailStyle=1&ext_deeplink=bilibili%3A%2F%2Flogin%2Forigin%3Frouter_from%3Dbilibili%3A%2F%2Fpegasus%2Fpromo%26key_prompt_scene%3Dmain.homepage.avatar-nologin.all.click%26key_sms_login_direct%3Dtrue%26key_sms_login_enable%3Dtrue%26login_experiment%3Dfalse&ext_passback=hmb_Lp08MKZjm5qnnSLm-oL04XhwAfTNTPgKGltASBDoRDmihxMQztdf3nx4iqlZ5QYNFTPza5jWVMosT7CP3vvcr6vHwOQ_13m2zsMvird4uwsSc779YBeEhYjJB88rtZZEDg0vF6WN67_RDg-Rsum71b-Lnzd-cqhj7yYsPeE6D3dOb3bzJhNpjp0PLVrmVgvc6VFpBYLajSVwPKjf5Q6pjsiQWOE05ugsId4baipzyaOji6nP-1IBdEQlVfkXqFx44I22kRwbnce6EXSiMGMm_U6rsjlGpcmi47Q8UlEmEOaXyO0v5Ndf2owhmwgOr8hnuPQiN0sWl5ZA32mma35d7poU1x0KYxEyJ_fDLGo2NzpJ201OEpSMH512Sd5nArldIDyyoVeGnb4y2-GH3FJj5kDfaaZrfl3u_waoVdy6Rr5mvbqI9nCGboW91Z5JU70HEjfkAZVBkW32WVTl0BmTrf39oBrcogrtR9VqFM50O1X66goZUihbALpLhlJaNc8lfcBlRtHAez6AGX_hyZUZWtdCIxey_OT_8bNjLYh7QacA6fUFH-V8JrthbvHmx2QMgRpGBYyBQidRxD1f3zHXI9xxF3cX-vSMTtYRQCkf77SsGnTZf6cCl_L06CHJsnpqvmctw6bwYGT64mmjGHHMMbBbk32ub3Ybli4oCo6xuRnb2f97qGNYCViHdkXZ-mJVAbcr8AtoVMTiCeicR8YAExfbpTsPtzRSUQ_CmeggF-jb756D-GIcd8oLIMz7eMESdbEzqko37Q_wsxVIthJ8_u-DE5J3Re5PyS1o5HkXau6XOsIRPjYqJLAsGxoTCIP31-2K70y8o35SwJi-XbnZY_CzFUi2Enz-wEte8mCKitkQ3a0iLsoLvA&id=com.taobao.taobao&nonce=-8741718211143006131:29108879&senderPackageName=com.miui.video&sign=JaBzxud6xGQATLnZCDFJqtGoqvqD2sWjS6uK20smcdX56JXlzo%2Bs9aa4k2u7FTRXyWX0T8CVXbVIJ7SgbugiA3yVFeNjl8v%2BSg3jYzQ5JCXkVuXArwx5xRd02NVaxIH1EmCxyPGZnTM8E7OuC4PBLwE7ls%2BAV4cxX1QKbSy8Q2ZEmySUxau62DaVAjAQ91dTU2kAHY5e4kGkPIWoabbD4PhkFniqH4sV3mvr5jUMUNSgBQDH7B9zJEYLiKpzrIlrXkefb%2BCjD9vM9QyVEi8U1NPtb6HFd9N7dYv%2BkZG8zH7qVKLa0LH0rWhS6TEBkFGW5HFko2zHLEF82%2FR04AjiSw%3D%3D&startDownload=true&startSubscribe=true";
-    $(document).ready(function(){
-         $.ajax({
-              url: 'https://infosec.mioffice.cn/appscan/api/deeplink/com.ss.android.ugc.aweme.lite?target=com.miui.weather2',  
-              method: 'GET',
-              type: 'json',
-              timeout: 2000,
-              success: function(res){
-                  console.log(res);
-                  deeplink_b64 = res["data"]["deeplink"];
-                  console.log(deeplink_b64);
-                  deeplink = atob(deeplink_b64);
-                  console.log(deeplink);
-                  window.location.href = deeplink;
-    //window.location.href = "mimarket://details/detailfloat?show_cta=true&startDownload=true&overlayPosition=1&packageName=com.ss.android.ugc.aweme.lite&senderPackageName=com.miui.video&appClientId=2882303761517740913&appSignature=GOgfBh7GJ_BJhCyvmILLbGoMvyQLPP2X-6GOTcMG1rw&nonce=-1712494802340391592:27164789&ref=DELIVERY_GALLERY_APP_1.17.h.1&launchWhenInstalled=true"
-              },
-              error: function(res){
-              }
-          });
-         });
-    
+    window.location.href = "market://details/detailfloat?show_cta=true&startDownload=true&overlayPosition=1&packageName=com.ss.android.ugc.aweme.lite&senderPackageName=com.miui.video&appClientId=2882303761517740913&appSignature=GOgfBh7GJ_BJhCyvmILLbGoMvyQLPP2X-6GOTcMG1rw&nonce=-1712494802340391592:27164789&ref=DELIVERY_GALLERY_APP_1.17.h.1&launchWhenInstalled=true"
 </script>
-</body>
-</html>
